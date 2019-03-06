@@ -1,0 +1,37 @@
+.container1 {
+    float: right;
+    clear: both;
+};
+
+
+.container2 {
+    float: left;
+};
+h1 {
+    font-weight: bold;
+    letter-spacing: 1.5em;
+    text-shadow: 2px 2px black;
+}    
+
+p {
+    background-color:white;color: blue
+}    
+.jumbotron {
+    background-image: url("http://www.likecovers.com/covers/original/blue-sky-facebook-covers.jpg?i");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+};    
+
+;
+.button {
+    background-color: pink; 
+};    
+
+;
+
+
+body {
+    background-color: navy;
+};    

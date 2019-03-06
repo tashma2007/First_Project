@@ -1,14 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/nygel.css">
+    <link rel="stylesheet" href="assets/css/lyft.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="assets/javascript/nygel.js"></script>
     <title>Document</title>
+
 </head>
+
 <body>
-    
+    <!-- jumbotron -->
+    <div class="jumbotronContainer">
+        <div class="jumbotron">
+            <h1 class="display-4"><u>GALLIVANT</u></h1>
+            <br>
+            <p class="lead"><strong>Business Travel Assistant</strong></p>
+            <br>
+            <p>Welcome to your one-stop shop for all of your business traveling needs! Travel ANYWHERE
+                with Gallivant where we
+                provide optimal travel solutions for the lowest price. This is travel success made simple!
+            </p>
+            <hr class="my-4">
+            <p>To get started planning your trip, click the button below!</p>
+            <br>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+    </div>
+    <!-- jumbotronend -->
+
+    <!-- weatherholder -->
+    <!-- Place holder DO NOT USE -->
+    <script type='text/javascript'
+        src='https://darksky.net/widget/default/42.360082,-71.05888/us12/en.js?height=500&title=Full Forecast&textColor=333333&bgColor=FFFFFF&skyColor=333&fontFamily=Default&units=us&htColor=333333&ltColor=C7C7C7&displaySum=yes&displayHeader=yes'></script>
+    <!-- weather end -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="container1">
+                    <div class="card" style="width: 100%;">
+                        <img src="assets/images/airplane.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Get started here</h5>
+                            <p class="card-text">Select your flight destinations with our top of the line Flight
+                                selector technology
+                                which will give you the best flights for the lowest prices.</p>
+                            <a href="#" class="btn btn-primary">Pick a flight</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container2">
+                    <div class="card" style="width: 100%;">
+                        <img src="assets/images/carphoto.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Think you'll need a ride to the airport? Select the button below and
+                                contact a lyft</p>
+                            <div class="container">
+                                <div class="button">
+                                    <br>
+                                    <button id="lyft-web-button">Lyft Button</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container3">
+                    <div class="card" style="width: 100%;">
+                        <img src="assets/images/businessman.jpeg" class="card-img-top" alt="..." width="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Flights in advance</h5>
+                            <p class="card-text">This is the perfect site for business trips. To book a future flight
+                                click below</p>
+                            <a href="#" class="btn btn-primary">Future trip</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mapHolder -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIWDOhb-EoLh7aAtNju5kz6twkLnUq7Hq23rkWF306qfyNBmeT" style="width:100%">
+    <!-- map end -->
+    <!-- card1 -->
+    <!-- <div class="container1">
+        <div class="card" style="width: 30%;">
+            <img src="assets/images/airplane.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Get started here</h5>
+                <p class="card-text">Select your flight destinations with our top of the line Flight selector technology
+                    which will give you the best flights for the lowest prices.</p>
+                <a href="#" class="btn btn-primary">Pick a flight</a>
+            </div>
+        </div>
+    </div> -->
+    <!-- card 2 -->
+    <!-- <div class="container2">
+        <div class="card" style="width: 30%;">
+            <img src="assets/images/carphoto.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Think you'll need a ride to the airport? Select the button below and contact a lyft
+                </p>
+                <div class="container">
+                    <div class="button">
+                        <button id="lyft-web-button">Lyft Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- card 3 start -->
+    <!-- <div class="container3">
+        <div class="card" style="width: 30%;">
+            <img src="assets/images/businessman.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Flights in advance</h5>
+                <p class="card-text">This is the perfect site for business trips. To book a future flight click below
+                </p>
+                <a href="#" class="btn btn-primary">Future trip</a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- card3 end -->
+
+    <script type="text/javascript">
+        var OPTIONS = {
+            scriptSrc: 'lyftWebButton.min.js',
+            namespace: '',
+            clientId: 'aAaVdxfXo_8S',
+            clientToken: 'aLUlI2RJOLtZaama70ThoWHV/vRC6dd6a0Uoe2t76hzpOohHApNuBRDc+R0wSn9ZwK5iIpzRUODdNcsH5LAvndqrHL/9bs+xnjc5DUTEv/z7pD6CDvH8dXs=',
+            location: {
+                pickup: {},
+                destination: {
+                    latitude: '37.776503000',
+                    longitude: '-122.392038500',
+                },
+            },
+            parentElement: document.getElementById('lyft-web-button-parent'),
+            queryParams: {
+                credits: ''
+            },
+            theme: 'multicolor large',
+        };
+        (function (t) {
+            var n = this.window,
+                e = this.document;
+            n.lyftInstanceIndex = n.lyftInstanceIndex || 0;
+            var a = t.parentElement,
+                c = e.createElement("script");
+            c.async = !0, c.onload = function () {
+                n.lyftInstanceIndex++;
+                var e = t.namespace ? "lyftWebButton" + t.namespace + n.lyftInstanceIndex : "lyftWebButton" + n.lyftInstanceIndex;
+                n[e] = n.lyftWebButton, t.objectName = e, n[e].initialize(t)
+            }, c.src = t.scriptSrc, a.insertBefore(c, a.childNodes[0])
+        }).call(this, OPTIONS);
+    </script> -->
 </body>
+
 </html>
 
 <!-- Potential API's -->
