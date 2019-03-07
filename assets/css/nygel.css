@@ -1,3 +1,8 @@
+body {
+    background-color: navy; 
+    background-image: url("https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+};    
 .container1 {
     float: right;
     clear: both;
@@ -7,17 +12,18 @@
 .container2 {
     float: left;
 };
+
 h1 {
     font-weight: bold;
     letter-spacing: 1.5em;
     text-shadow: 2px 2px black;
-}    
+};    
 
 p {
-    background-color:white;color: blue
+    color: white;
 }    
 .jumbotron {
-    background-image: url("http://www.likecovers.com/covers/original/blue-sky-facebook-covers.jpg?i");
+    background-image: url("https://images.pexels.com/photos/1567069/pexels-photo-1567069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
     color: white;
     text-align: center;
@@ -31,7 +37,3 @@ p {
 
 ;
 
-
-body {
-    background-color: navy;
-};    
