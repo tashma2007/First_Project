@@ -1,10 +1,10 @@
 /* medium styles */
-#lyft-web-button {
+.lyft-web-button {
     cursor: pointer;
     padding: 5px 10px;
     color: #000000; /* white */
     font-family: sans-serif;
-    background-color: salmon; /* black */
+    background-color: #FFFFFF; /* black */
     border: 2px;
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
@@ -12,18 +12,19 @@
             border-style: solid;
             border-color: black;
             font-size: 30px;
+            align-content: center;
   }
-  #lyft-web-button:hover {
+  .lyft-web-button:hover {
     background-color: #E6E6E6; /* reduce brightness by 10% */
   }
-  #lyft-web-button > .lyft-logo {
+  .lyft-web-button > .lyft-logo {
     display: inline-block;
     width: 48px;
     height: 35px;
     margin-top: 4px;
     vertical-align: middle;
   }
-  #lyft-web-button > .lyft-logo > svg {
+  .lyft-web-button > .lyft-logo > svg {
     width: 48px; /* fix svg rendering for IE */
     height: 35px; /* fix svg rendering for IE */
   }
