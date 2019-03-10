@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Zomato</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
-    
+    <script>
+
+        var APIKey = "25eRi-vR2fYjEysHE_5WuMxJ6eqXkrgbAFbAgOth2a6m_eRWU4m8od_U-2WItbTsqSBkNJdsRdwl3LHhKMnWSy-X1TIPrqCYSJsXSvsMeMeIM9t8e6m-SMhIN_mDXHYx";
+
+        var queryURL = "https://cors-anywhere.herokuapp.com/https://www.yelp.com/search?find_desc=restaurants&find_loc=Charlotte%2C+NC&ns=1" + APIKey;
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        })
+
+            .then(function (response) {
+
+
+                console.log(response);
+            });
+
+
+    </script>
+
 </body>
+
 </html>
