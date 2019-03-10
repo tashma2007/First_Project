@@ -5,31 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zomato</title>
+    <title>Yelp API</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 
 <body>
-    <script>
-
-        var APIKey = "25eRi-vR2fYjEysHE_5WuMxJ6eqXkrgbAFbAgOth2a6m_eRWU4m8od_U-2WItbTsqSBkNJdsRdwl3LHhKMnWSy-X1TIPrqCYSJsXSvsMeMeIM9t8e6m-SMhIN_mDXHYx";
-
-        var queryURL = "https://cors-anywhere.herokuapp.com/https://www.yelp.com/search?find_desc=restaurants&find_loc=Charlotte%2C+NC&ns=1" + APIKey;
-
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        })
-
-            .then(function (response) {
-
-
-                console.log(response);
-            });
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">DATING DONE RIGHT</h1>
+            <p class="lead">So, you've went through pages of possiblities on some dating app and found a match, or maybe
+                you've finally got that cute co-worker on the second floor to notice you. You've connected a few times
+                over the phone and when you finally ask him or her out on a date, that special someone accepts. You're
+                on cloud nine, right?! Until...the questions is asked, "What do you want to do for our first date?" Your
+                mind shuts down. <i>Houston, we have a problem!</i> But wait! You just remembered
+                that you have us. We'll provide you with upcoming events and restaurants in the Charlotte area, and
+                dating ideas that you can use even if you're on a budget. We've even thrown in the weather so you and
+                your date won't be hiking in the rain!</p>
+        </div>
+    </div>
 
 
-    </script>
 
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
