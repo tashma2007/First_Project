@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/nygel.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <!-- <script src="assets/javascript/nygel.js"></script> -->
+    <script src="assets/javascript/nygel.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-
+    <!-- Nav Bar start -->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <nav class="navbar navbar-dark bg-dark">
                 <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -35,8 +34,8 @@
                             <a class="nav-link" href="#">Link</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 Dropdown
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -58,145 +57,138 @@
             </nav>
         </nav>
     </div>
+    <!-- Jumbotron start -->
     <div class="container">
         <div class="jumbotron">
             <h1 class="display-4"><u>DATING DONE RIGHT!</u></h1>
             <br>
-            <h2 class="lead"><strong>Dating options at your fingertips!</strong></h2>
+            <h2 class><strong><i>Dating options at your fingertips!</i></strong></h2>
             <br>
-            <p>Looking for a great place to take your significant other?
+            <p>So, you've went through pages of possiblities on some dating app and found a match, or maybe
+                you've finally got that cute co-worker on the second floor to notice you. You've connected a few times
+                over the phone and when you finally ask him or her out on a date, that special someone accepts. You're
+                on cloud nine, right?! Until...the questions is asked, "What do you want to do for our first date?"
+                Your
+                mind shuts down. <i>Houston, we have a problem!</i> But wait! You just remembered
+                that you have us. We'll provide you with upcoming events and restaurants in the Charlotte area, and
+                dating ideas that you can use even if you're on a budget. We've even thrown in the weather so you and
+                your date won't be hiking in the rain!
             </p>
             <hr class="my-4">
             <p>To plan the perfect date, click the button below!</p>
             <br>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <a class="btn btn-primary btn-dark" href="#" role="button">Learn more</a>
         </div>
     </div>
+   
+    </div>
 
+    <!-- Insert Weather API -->
+
+    <!-- -------------------------------- -->
+
+    <!-- Weather API Above -->
+    <!-- Card one start -->
     <div class="itenerary">
-        <div class="card mb-3">
+        <div class="card mb-3" style="width:500px">
             <img src="https://images.pexels.com/photos/1824684/pexels-photo-1824684.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                 class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">You're Dating Itenerary</h5>
-                <p class="card-text">Select the date options you want!</p>
+                <p class="card-text">Get an email with your date information!</p>
                 <div class="class">
-                    <div class="activity">
-                        <input type="text"></div>
-                    <div class="id">
-                        <input id="food" type="text"></div>
-                    <div class="id">
-                        <input id="date" type="text"></div>
-                    <input id="submitButton" type="submit">
+                    <div class="submitForm">
+                        <div class="firstName">
+                            <input type="text" placeholder="John">First Name</div>
+                        <div class="lastName">
+                            <input type="text" placeholder="Smith">Last Name</div>
+                        <div class="email">
+                            <input type="text" placeholder="loveishere@dating.com">Email</div>
+                        <input id="submitButton" type="submit">
+                    </div>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <!-- Card two start -->
+            <div class="card" style="width:500px">
+                <div class="card-body" style="width:500px">
+                    <h5 class="card-title">Select the date options you want</h5>
+                    <p class="card-text">Once your date options have been selected, our team can email you an organized
+                        itenerary of your night from beginning to end</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                <img src="https://images.pexels.com/photos/842546/pexels-photo-842546.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top" alt="...">
             </div>
         </div>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-            <img src="https://images.pexels.com/photos/842546/pexels-photo-842546.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                class="card-img-top" alt="...">
+        <!-- Table start -->
+        <div class="container">
+            <table class="table table-dark">
+                <thead>
+
+                    <tr style="font-size:24px">
+                        <th scope="col"><u>Event Name</u></th>
+                        <th scope="col"><u>Description</u></th>
+                        <th scope="col"><u>Time/Date</u></th>
+                        <th scope="col"><u>City</u></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
         </div>
-    </div>
-    <div class="container">
-        <table class="table table-dark">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <script>
-// EventBrite API start
-// Please enable location so that we can locate items in your vicinity!
-        $("#submitButton").on("click", function () {
-            var dateVariable = $("#date").val();
-            var dinnerVariable = $("#food").val();
-            var activityVariable = $("#activity").val();
-            console.log(activityVariable);
-        });
 
-        var createRow = function (data) {
-            // Create a new table row element
-            var newRow = $("<tr>");
-            console.log(data.events[0].name.text);
-            console.log(data.events[0].description.text);
-            // Methods run on jQuery selectors return the selector they we run on
-            // This is why we can create and save a reference to a td in the same statement we update its text
-            var eventName = $("<td>").text(data.name);
-            var eventDetails = $("<td>").text(data.summary);
-            var i = 0;
-            var eventData = console.log(data.events[i].name.text)
-            newRow.append(eventName, eventDetails);
-            // Append the table row to the table body
-            $("tbody").append(newRow);
-            $("tbody").append(data.events[0].name.text);
-            for (i = 0; i < 6; i++) {
-                $("tbody").first().append(data.events[i].name.text);
-                $("tbody").append(data.events[i].description.text);
-                $("tbody").append(newRow);
 
+        <!-- Insert Zomato API Here -->
+
+        <!-- ------------------------------------ -->
+
+        <!-- Insert Zomato API above -->
+        <script>
+          
+
+            var createRow = function (data) {
+               
+                for (i = 0; i < 6; i++) {
+                    $(".table-dark tr:last").after("<tr><td>" + data.events[i].name.text + "</td><td>" + data.events[
+                            i]
+                        .description.text + "</td><td>" + data.events[i].start.local + "</td><td>" + data.location
+                        .augmented_location
+                        .city + "</td></tr>");
+
+                };
+               
             };
-        };
-        // for loop
+            // for loop
 
-        var findDate = function (name) {
-            var settings = {
-                "async": true,
-                "crossDomain": true,
-                "url": "https://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search?location.address=charlotte&location.within=10km&expand=venue",
-                "method": "GET",
-                "headers": {
-                    
-                    "Postman-Token": "62803b82-bc94-43de-99b3-7fd3e21824b3"
+            var findDate = function (name) {
+                var settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "https://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search?location.address=charlotte&location.within=10km&expand=venue",
+                    "method": "GET",
+                    "headers": {
+
+                    }
                 }
-            }
 
-            // event.details:read
+                // event.details:read
 
-            $.ajax(settings).done(function (response) {
-                console.log(response);
-                createRow(response);
-                // console.log(response.name);
-                console.log(name)
+                $.ajax(settings).done(function (response) {
+                    console.log(response);
+                    createRow(response);
+                    // console.log(response.name);
+                    console.log(name)
 
-            });
-        };
+                });
+            };
 
-        findDate("Hamilton")
-    // $("tbody").findDate("Shamrockin' South End #rocktherailtrail")
+            findDate("Hamilton")
+            // $("tbody").findDate("Shamrockin' South End #rocktherailtrail")
 
-    // EventBrite API end
-    </script>
+            // EventBrite API end
+        </script>
 </body>
 
 </html>

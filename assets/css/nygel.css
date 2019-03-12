@@ -8,6 +8,10 @@ body {
     clear: both;
 };
 
+.submitForm {
+    background-color: white; font-size: 30px;
+
+};
 
 .container2 {
     float: left;
@@ -28,12 +32,21 @@ p {
     color: white;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    font-size:24px;
+    line-height: 25px;
 };    
 
 ;
+    .eventList {
+        font-weight: bold; 
+        text-shadow: 2px 2px black; 
+        color: white; 
+        text-align: center; 
+        background-color: black;
+    };
 .button {
     background-color: pink; 
 };    
-
 ;
 
