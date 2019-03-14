@@ -10,9 +10,9 @@ $(document).ready(function () {
         });
     }
 
-    var insert = function (firstname, lastname) {
+    var insert = function (firstname, lastname,) {
         db.transaction(function (tx) {
-            tx.executeSql("INSERT INTO people (firstname, lastname) VALUES (?,?)", [firstname, lastname]);
+            tx.executeSql("INSERT INTO people (firstname, lastname) VALUES (?,?)", [firstname, lastname,]);
         });
     }
 
@@ -30,13 +30,19 @@ $(document).ready(function () {
 
 
     var addUser = $("#submitButton").on("click", function () {
-        var fName = $(".firstName").val("");
-        var lName = $(".lastName").val("");
+        var fName = $("#firstName").val();
+        var lName = $("#lastName").val();
         insert(fName, lName);
-        console.log(addUser);
+        console.log(fName);
+        console.log(lName);
+        console.log("Test")
+        $("#submitForm").validate({
+            debug:true
+        });
     });
 
     create();
+    insert();
     insert();
     select();
     // $('#myModal').modal({

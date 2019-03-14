@@ -1,7 +1,9 @@
 body {
     background-color: navy; 
-    background-image: url("https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-size: cover;
+    background-image: url("https://cdn.pixabay.com/photo/2014/02/07/11/36/couple-260899__340.jpg"), url("https://cdn.pixabay.com/photo/2018/01/05/22/48/couple-3064048__340.jpg");
+    background-size: 1200px auto;
+    padding: 20px;
+    margin: 20px;
 };    
 .container1 {
     float: right;
@@ -9,8 +11,12 @@ body {
 };
 
 .submitForm {
-    background-color: white; font-size: 30px;
+    background-color: white; font-size: 30px; width: 50%; left:auto; right: auto;
 
+};
+
+#contactUs-form {
+background-color: white; font-size: 30px; width: 50%; left:auto; right: auto;
 };
 
 .container2 {
@@ -27,7 +33,7 @@ p {
     color: white;
 }    
 .jumbotron {
-    background-image: url("https://images.pexels.com/photos/1567069/pexels-photo-1567069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
     color: white;
     text-align: center;
@@ -48,5 +54,9 @@ p {
 .button {
     background-color: pink; 
 };    
+
+#weatherCard { width:100%;
+
+}
 ;
 

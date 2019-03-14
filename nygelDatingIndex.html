@@ -11,52 +11,54 @@
     <link rel="stylesheet" href="assets/css/nygel.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="assets/javascript/nygel.js"></script>
+    <script src="assets/javascript/annabella.js"></script>
     <title>Document</title>
+        <!-- Nav Bar start -->
+        <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </nav>
+            </div>
 </head>
 
 <body>
-    <!-- Nav Bar start -->
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <nav class="navbar navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
-            </nav>
-        </nav>
-    </div>
     <!-- Jumbotron start -->
     <div class="container">
         <div class="jumbotron">
@@ -80,37 +82,56 @@
             <a class="btn btn-primary btn-dark" href="#" role="button">Learn more</a>
         </div>
     </div>
-   
+
     </div>
 
     <!-- Insert Weather API -->
-
-    <!-- -------------------------------- -->
+    <div id="weatherCard">
+        <div class="float-right">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="container">
+                    </div>
+                    <div class="city"></div>
+                    <div class="wind"></div>
+                    <div class="humidity"></div>
+                    <div class="temp"></div>
+                    <div class="description"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Weather API Above -->
     <!-- Card one start -->
     <div class="itenerary">
-        <div class="card mb-3" style="width:500px">
-            <img src="https://images.pexels.com/photos/1824684/pexels-photo-1824684.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                class="card-img-top" alt="...">
+        <div class="card mb-3" style="width:600px">
+            <img src="https://cdn.pixabay.com/photo/2016/02/19/11/52/couple-1210023_960_720.jpg" class="date-img-top"
+                alt="...">
             <div class="card-body">
-                <h5 class="card-title">You're Dating Itenerary</h5>
+                <h5 class="card-title"><u>Your Dating Itenerary</u></h5>
                 <p class="card-text">Get an email with your date information!</p>
                 <div class="class">
-                    <div class="submitForm">
-                        <div class="firstName">
-                            <input type="text" placeholder="John">First Name</div>
-                        <div class="lastName">
-                            <input type="text" placeholder="Smith">Last Name</div>
-                        <div class="email">
-                            <input type="text" placeholder="loveishere@dating.com">Email</div>
-                        <input id="submitButton" type="submit">
-                    </div>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <form role="form" data-toggle="validator">
+                        <div class="submitForm">
+                            <div class="firstName">
+                                <input id="firstName" type="text" placeholder="John"> First Name</div>
+                            <br>
+                            <div class="lastName">
+                                <input id="lastName" type="text" placeholder="Smith"> Last Name</div>
+                            <br>
+                            <div class="email">
+                                <input id="email" type="text" placeholder="loveishere@dating.com"> Email</div>
+                            <br>
+                            <input id="submitButton" type="submit">
+                        </div>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </form>
                 </div>
             </div>
             <!-- Card two start -->
-            <div class="card" style="width:500px">
+            <div class="card" style="width:600px">
                 <div class="card-body" style="width:500px">
                     <h5 class="card-title">Select the date options you want</h5>
                     <p class="card-text">Once your date options have been selected, our team can email you an organized
@@ -118,7 +139,7 @@
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
                 <img src="https://images.pexels.com/photos/842546/pexels-photo-842546.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    class="card-img-top" alt="...">
+                    class="other-img-top" alt="...">
             </div>
         </div>
         <!-- Table start -->
@@ -146,19 +167,17 @@
 
         <!-- Insert Zomato API above -->
         <script>
-          
-
             var createRow = function (data) {
-               
+
                 for (i = 0; i < 6; i++) {
                     $(".table-dark tr:last").after("<tr><td>" + data.events[i].name.text + "</td><td>" + data.events[
                             i]
-                        .description.text + "</td><td>" + data.events[i].start.local + "</td><td>" + data.location
-                        .augmented_location
-                        .city + "</td></tr>");
+                .url + " Link Here " + "</a></td><td>" + data.events[i].start.local + "</td><td>" + data.location
+                    .augmented_location
+                    .city + "</td></tr>");
 
-                };
-               
+            };
+
             };
             // for loop
 
@@ -169,7 +188,7 @@
                     "url": "https://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search?location.address=charlotte&location.within=10km&expand=venue",
                     "method": "GET",
                     "headers": {
-
+                        
                     }
                 }
 
@@ -184,7 +203,7 @@
                 });
             };
 
-            findDate("Hamilton")
+            findDate()
             // $("tbody").findDate("Shamrockin' South End #rocktherailtrail")
 
             // EventBrite API end
