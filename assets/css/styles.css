@@ -1,11 +1,15 @@
 .jumbotron {
-    margin-top: 20px;
+    margin-top: 10px;
+    height: 500px;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0q7IkK9lyrI6b5n90y3aIWk_VO89-O-FQa-TTX6iBG3k41RMZLQ);
 
     background-size: cover;
     color: white;
 
-
-
-
 }
+.lead {
+    font-weight: bold;
+}
+
+
+
