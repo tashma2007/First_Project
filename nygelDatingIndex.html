@@ -13,48 +13,48 @@
     <script src="assets/javascript/nygel.js"></script>
     <script src="assets/javascript/annabella.js"></script>
     <title>Document</title>
-        <!-- Nav Bar start -->
-        <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <nav class="navbar navbar-dark bg-dark">
-                        <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-        
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">
-                                        Dropdown
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                                </li>
-                            </ul>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </nav>
-                </nav>
-            </div>
+    <!-- Nav Bar start -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </nav>
+    </div>
 </head>
 
 <body>
@@ -149,9 +149,9 @@
 
                     <tr style="font-size:24px">
                         <th scope="col"><u>Event Name</u></th>
-                        <th scope="col"><u>Description</u></th>
+                        <th scope="col"><u>Address</u></th>
                         <th scope="col"><u>Time/Date</u></th>
-                        <th scope="col"><u>City</u></th>
+                        <th scope="col"><u>Venue</u></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -170,13 +170,9 @@
             var createRow = function (data) {
 
                 for (i = 0; i < 6; i++) {
-                    $(".table-dark tr:last").after("<tr><td>" + data.events[i].name.text + "</td><td>" + data.events[
-                            i]
-                .url + " Link Here " + "</a></td><td>" + data.events[i].start.local + "</td><td>" + data.location
-                    .augmented_location
-                    .city + "</td></tr>");
+                    $(".table-dark tr:last").after("<tr><td>" + data.events[i].name.text + "</td><td>" + data.events[i].venue.address.localized_address_display + "</td><td>" + data.events[i].start.local + "</td><td>" + data.events[i].venue.name + "</td></tr>");
 
-            };
+                };
 
             };
             // for loop
@@ -188,7 +184,9 @@
                     "url": "https://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search?location.address=charlotte&location.within=10km&expand=venue",
                     "method": "GET",
                     "headers": {
-                        
+                        "Authorization": "Bearer NU6ISVQ3HWN2QCYFUVXR",
+                        "cache-control": "no-cache",
+                        "Postman-Token": "62803b82-bc94-43de-99b3-7fd3e21824b3"
                     }
                 }
 
