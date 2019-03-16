@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/nygelcss.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="nygelcss.css"></script>
-    <link rel="stylesheet" href="assets/css/final.css"></script>
+    <link rel="stylesheet" href="assets/css/final.css">
     <script src="assets/javascript/annabella.js"></script>
+    <script src="assets/javascript/nygel.js"></script>
     <title>Document</title>
 </head>
 
@@ -21,30 +20,25 @@
     <section id="header">
 
         <nav class="navbar navbar-expand-lg navbar-light ">
-            <a class="navbar-brand" href="#"> <img src="./assets/images/dbabf195-f6b1-4863-9eec-cc0a76ddea35.png"
+            <a class="navbar-brand" href="#"> <img src="https://cdn.pixabay.com/photo/2015/08/30/20/22/heart-914682_960_720.png"
                     alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <link rel="stylesheet"
-                    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
                         <a class="nav-link" href="#">HOME </a>
                     </li>
+                    <br>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT US</a>
+                        <a class="nav-link" href="finalEventsPage.html">EVENTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SERVICES</a>
+                        <a class="nav-link" href="finalRestaurantspage.html">RESTAURANTS</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">FEATURES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">REVIEWS</a>
-                    </li>
+
 
                 </ul>
             </div>
@@ -54,7 +48,8 @@
     <section class="welcome"></section>
     <div class="container">
         <div class="welcome text-center">
-            <h1> DATING DONE RIGHT!</h1>
+            <h1> <strong><u>DATING DONE RIGHT!</u></strong></h1>
+            <br>
             <p> So, you've went through pages of possiblities on some dating app and found a match, or maybe
                 you've finally got that cute co-worker on the second floor to notice you. You've connected a few times
                 over the phone and when you finally ask him or her out on a date, that special someone accepts. You're
@@ -64,11 +59,37 @@
                 that you have us. We'll provide you with upcoming events and restaurants in the Charlotte area, and
                 dating ideas that you can use even if you're on a budget. We've even thrown in the weather so you and
                 your date won't be hiking in the rain! <br> To plan the perfect date, click the button below!</p>
-            <button type="submit" class="btn home-btn">Let's start! </button>
+            <button type="submit" class="btn home-btn"><a href="finalEventsPage.html">Let's start!</a> </button>
         </div>
     </div>
+
     <!-- About Us -->
     <section id="about">
+
+        <!-- Input form -->
+
+        <div class="feature" style="padding:30px">
+            <div class="feature-left">
+                <img src="https://images.pexels.com/photos/1824684/pexels-photo-1824684.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="submitForm" alt="...">
+                <h5 class="card-title">You're Dating Itenerary</h5>
+                <p class="card-text">Get an email with your date information!</p>
+                <div class="class">
+                    <div class="submitForm">
+                        <div class="firstName">
+                            <input id="firstName" type="text" placeholder="John">First Name</div>
+                        <div class="lastName">
+                            <input id="lastName" type="text" placeholder="Smith">Last Name</div>
+                        <div class="email">
+                            <input id="email" type="text" placeholder="loveishere@dating.com">Email</div>
+                        <input id="submitButton" type="submit">
+                    </div>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- inputend -->
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center">
@@ -78,10 +99,12 @@
                 <div class="col-md-6 text-justify">
                     <h3> Knowledge, Skills and Hard Work</h3>
                     <p>But wait! You just remembered
-                        that you have us. We'll provide you with upcoming events and restaurants in the Charlotte area,
+                        that you have us. We'll provide you with upcoming events and restaurants in the Charlotte
+                        area,
                         and</p>
                     <p>
-                        dating ideas that you can use even if you're on a budget. We've even thrown in the weather so
+                        dating ideas that you can use even if you're on a budget. We've even thrown in the weather
+                        so
                         you and
                         your date won't be hiking in the rain!
                     </p>
@@ -89,10 +112,12 @@
                 <div class="col-md-6 text-justify">
                     <h3> Work Hard in Silence</h3>
                     <p>But wait! You just remembered
-                        that you have us. We'll provide you with upcoming events and restaurants in the Charlotte area,
+                        that you have us. We'll provide you with upcoming events and restaurants in the Charlotte
+                        area,
                         and</p>
                     <p>
-                        dating ideas that you can use even if you're on a budget. We've even thrown in the weather so
+                        dating ideas that you can use even if you're on a budget. We've even thrown in the weather
+                        so
                         you and
                         your date won't be hiking in the rain!
                     </p>
@@ -115,36 +140,39 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="https://img.icons8.com/cotton/64/000000/thermometer.png">
-                    <h4>Weather</h4>
-                    <p>
-   <!-- Weather API below -->
 
-                        <div id="weatherCard">
-                            <div class="float-right">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="..." class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <div class="container">
-                                        </div>
-                                        <div class="city"></div>
-                                        <div class="wind"></div>
-                                        <div class="humidity"></div>
-                                        <div class="temp"></div>
-                                        <div class="description"></div>
+                    <h4><img src="https://img.icons8.com/cotton/64/000000/thermometer.png">Weather</h4>
+                    <!-- Weather API below -->
+
+
+                    <div id="weatherCard">
+                        <div class="float-right">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" alt="..." style="width:18rem">
+                                <div class="card-body">
+                                    <div class="container">
                                     </div>
+                                    <div class="city"></div>
+                                    <div class="wind"></div>
+                                    <div class="humidity"></div>
+                                    <div class="temp"></div>
+                                    <div class="description"></div>
                                 </div>
                             </div>
                         </div>
-                    </p>
+                    </div>
+
 
                 </div>
+
+                <!-- Weather apiEnd -->
                 <div class="col-md-4">
                     <img src="https://img.icons8.com/cotton/64/000000/the-toast.png">
-                    <h4>Restaurants </h4>
-                    <p>
+                    <button type="button" class="btn btn-outline-secondary"><a href="finalRestaurantspage.html">Restaurants</a></button>
+                    <p style="width:18rem">
                         So, you've went through pages of possiblities on some dating app and found a match, or maybe
-                        you've finally got that cute co-worker on the second floor to notice you. You've connected a few
+                        you've finally got that cute co-worker on the second floor to notice you. You've connected a
+                        few
                         times
                         over the phone and when you finally ask him or her out on a date, that special someone accepts.
                         You're
@@ -157,10 +185,11 @@
                 </div>
                 <div class="col-md-4">
                     <img src="https://img.icons8.com/cotton/64/000000/theatre-curtain.png">
-                    <h4>Events</h4>
-                    <p>
+                    <button type="button" class="btn btn-outline-secondary"><a href="finalEventsPage.html">Events</a></button>
+                    <p style="width:18rem">
                         So, you've went through pages of possiblities on some dating app and found a match, or maybe
-                        you've finally got that cute co-worker on the second floor to notice you. You've connected a few
+                        you've finally got that cute co-worker on the second floor to notice you. You've connected a
+                        few
                         times
                         over the phone and when you finally ask him or her out on a date, that special someone accepts.
                         You're
@@ -182,7 +211,7 @@
             <div class="row">
 
                 <div class="col-md-6">
-                    <img src="assets/images/people-2557451_1280.jpg" class="img-fluid">
+                    <img src="https://cdn.pixabay.com/photo/2015/08/30/20/22/heart-914682_960_720.png" class="img-fluid">
                 </div>
 
                 <div class="col-md-6">
@@ -244,8 +273,7 @@
                         match, or maybe
                         <br> <i class="fa fa-twitter"></i><span>@username</span>
                     </p>
-                    <img
-                        src="https://images.pexels.com/photos/1991468/pexels-photo-1991468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                    <img src="https://images.pexels.com/photos/1991468/pexels-photo-1991468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
                 </div>
                 <div class="col-md-3">
                     <p class="review">So, you've went through pages of possiblities on some dating app and found a
@@ -253,8 +281,7 @@
                         maybe
                         <br> <i class="fa fa-twitter"></i><span>@username</span>
                     </p>
-                    <img
-                        src="https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                    <img src="https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
                 </div>
                 <div class="col-md-3">
                     <p class="review">So, you've went through pages of possiblities on some dating app and found a
@@ -262,8 +289,7 @@
                         maybe
                         <br> <i class="fa fa-twitter"></i><span>@username</span>
                     </p>
-                    <img
-                        src="https://images.pexels.com/photos/1996250/pexels-photo-1996250.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                    <img src="https://images.pexels.com/photos/1996250/pexels-photo-1996250.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
                 </div>
                 <div class="col-md-3">
                     <p class="review">So, you've went through pages of possiblities on some dating app and found a
@@ -271,8 +297,7 @@
                         maybe
                         <br> <i class="fa fa-twitter"></i><span>@username</span>
                     </p>
-                    <img
-                        src="https://images.pexels.com/photos/1993094/pexels-photo-1993094.png?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260">
+                    <img src="https://images.pexels.com/photos/1993094/pexels-photo-1993094.png?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260">
                 </div>
             </div>
         </div>
@@ -281,113 +306,55 @@
     <section id="subscribe">
         <div class="container">
             <div class="subscribe text-center">
-                <h3>Join for free Trial now!</h3>
-                <br>
-                <p> Subscribe our newsletter and get 30 days free trial</p>
-                <br>
-                <div class="input-group">
-                    <input type="email" class="form-control" placeholder="Email Id">
-                    <div class="input-group-append">
-                        <button type="submit" class="input-group-text-btn"> Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <section id="signup">
+                    <div class="container">
+                        <div class="signup text-center">
+                            <h3>Join for free trial now!</h3>
+                            <br>
+                            <p> Sign up for your 30 day free trial</p>
+                            <br>
 
-        </div>
+                            <div class="registration-form">
+                                <form>
+                                    <div class="form-group">
+                                        <input class="form-control item" type="text" name="username" maxlength="15"
+                                            minlength="4" pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Username"
+                                            required style="background-color:white">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control item" type="password" name="password" minlength="6"
+                                            id="password" placeholder="Password" required style="background-color:white">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control item" type="email" name="email" id="email"
+                                            placeholder="Email" required style="background-color:white">
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-primary btn-block create-account" type="submit">START
+                                            30-DAY
+                                            TRIAL NOW</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+
+    </section>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
 
 
     </section>
 
-    <!-- Card one start -->
-    <!-- <div class="itenerary">
-        <div class="card mb-3" style="width:600px">
-            <img src="https://cdn.pixabay.com/photo/2016/02/19/11/52/couple-1210023_960_720.jpg" class="date-img-top"
-                alt="..."> -->
-    <!-- <div class="card-body">
-                <h5 class="card-title"><u>Your Dating Itenerary</u></h5>
-                <p class="card-text">Get an email with your date information!</p>
-                <div class="class">
-                    <form role="form" data-toggle="validator">
-                        <div class="submitForm">
-                            <div class="firstName">
-                                <input id="firstName" type="text" placeholder="John"> First Name</div>
-                            <br>
-                            <div class="lastName">
-                                <input id="lastName" type="text" placeholder="Smith"> Last Name</div>
-                            <br>
-                            <div class="email">
-                                <input id="email" type="text" placeholder="loveishere@dating.com"> Email</div>
-                            <br>
-                            <input id="submitButton" type="submit">
-                        </div>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </form>
-                </div>
-            </div> -->
-    <!-- Card two start -->
-    <!-- <div class="card" style="width:600px">
-                <div class="card-body" style="width:500px">
-                    <h5 class="card-title">Select the date options you want</h5>
-                    <p class="card-text">Once your date options have been selected, our team can email you an organized
-                        itenerary of your night from beginning to end</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-                <img src="https://images.pexels.com/photos/842546/pexels-photo-842546.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    class="other-img-top" alt="...">
-            </div> -->
-    <!-- </div> -->
-    <!-- Table start -->
-    <!-- <div class="container">
-            <table class="table table-dark">
-                <thead>
-                    <tr style="font-size:24px">
-                        <th scope="col"><u>Event Name</u></th>
-                        <th scope="col"><u>Description</u></th>
-                        <th scope="col"><u>Time/Date</u></th>
-                        <th scope="col"><u>City</u></th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-        </div> -->
-    <!-- Insert Zomato API Here -->
-    <!-- ------------------------------------ -->
-    <!-- Insert Zomato API above -->
-    <!-- <script>
-            var createRow = function (data) {
-                for (i = 0; i < 6; i++) {
-                    $(".table-dark tr:last").after("<tr><td>" + data.events[i].name.text + "</td><td>" + data.events[
-                        i]
-                        .url + " Link Here " + "</a></td><td>" + data.events[i].start.local + "</td><td>" + data.location
-                            .augmented_location
-                            .city + "</td></tr>");
-                };
-            };
-            // for loop
-            var findDate = function (name) {
-                var settings = {
-                    "async": true,
-                    "crossDomain": true,
-                    "url": "https://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search?location.address=charlotte&location.within=10km&expand=venue",
-                    "method": "GET",
-                    "headers": {
 
-                    }
-                }
-                // event.details:read
-                $.ajax(settings).done(function (response) {
-                    console.log(response);
-                    createRow(response);
-                    // console.log(response.name);
-                    console.log(name)
-                });
-            };
-            findDate()
-            // $("tbody").findDate("Shamrockin' South End #rocktherailtrail")
-            // EventBrite API end
-        </script> -->
+
 </body>
 
 </html>

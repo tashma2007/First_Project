@@ -32,28 +32,18 @@ $(document).ready(function () {
     var addUser = $("#submitButton").on("click", function () {
         var fName = $("#firstName").val();
         var lName = $("#lastName").val();
+        var eMail = $("#email").val();
         insert(fName, lName);
         console.log(fName);
         console.log(lName);
-        console.log("Test")
-        $("#submitForm").validate({
-            debug:true
-        });
+        console.log(eMail);
+
     });
 
     create();
     insert();
     insert();
     select();
-    // $('#myModal').modal({
-    //     keyboard: false
-    //   });
-
-    //   $('#myModal').on('hidden.bs.modal', function (e) {
-    //     // do something...
-    //    $('#myModal').modal('toggle');
-
-    //   $('#myModal').modal('show');
-    // })
+   
 
 });

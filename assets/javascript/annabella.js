@@ -68,4 +68,8 @@ $.ajax({
         var urlHaze = "https://media3.giphy.com/media/Zzz1GUuEZLrjy/200.webp?cid=3640f6095c898cf5557963536399ffdb";
         $(".card-img-top").attr("src", urlHaze);
     }
+    else if (weatherDescription === "scattered clouds") {
+        var urlscatteredClouds = "https://media1.giphy.com/media/mno6BJfy8USic/200.webp?cid=3640f6095c8c84a05877433667cd547e";
+        $(".card-img-top").attr("src", urlscatteredClouds);
+    }
    });

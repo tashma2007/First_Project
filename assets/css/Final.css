@@ -49,9 +49,10 @@
    margin: 20px auto;
 }
 /* services */
+
 #services{
     background-color: #efefef;
-    padding-top: 80px;
+    padding-top: 80px; 
     padding-bottom: 80px; 
 }
 #services .col-md-4{
@@ -186,55 +187,11 @@ padding: 5px;
                     box-shadow: none;
                     }
     
-/* body {
-    background-color: black; 
-    background-image: url("https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"),
-    background-size: 1200px auto;
-    padding: 20px;
-    margin: 20px;
-};    
-.container1 {
-    float: right;
-    clear: both;
+                    .table-dark {
+                        width:80%;left:auto; right:auto;
+                    }
+               
+@media screen and (min-width:480px) {
+   body{ width:90%;
+     padding:2px};
 };
-.submitForm {
-    background-color: white; font-size: 30px; width: 50%; left:auto; right: auto;
-};
-#contactUs-form {
-background-color: white; font-size: 30px; width: 50%; left:auto; right: auto;
-};
-.container2 {
-    float: left;
-};
-h1 {
-    font-weight: bold;
-    letter-spacing: 1.5em;
-    text-shadow: 2px 2px black;
-};    
-p {
-    color: white;
-}    
-.jumbotron {
-    background-image: url("https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-size: cover;
-    color: white;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 5px;
-    font-size:24px;
-    line-height: 25px;
-};    
-;
-    .eventList {
-        font-weight: bold; 
-        text-shadow: 2px 2px black; 
-        color: white; 
-        text-align: center; 
-        background-color: black;
-    };
-.button {
-    background-color: pink; 
-};    
-#weatherCard { width:100%;
-}
-; */
