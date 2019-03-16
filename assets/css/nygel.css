@@ -1,0 +1,62 @@
+body {
+    background-color: navy; 
+    background-image: url("https://cdn.pixabay.com/photo/2014/02/07/11/36/couple-260899__340.jpg"), url("https://cdn.pixabay.com/photo/2018/01/05/22/48/couple-3064048__340.jpg");
+    background-size: 1200px auto;
+    padding: 20px;
+    margin: 20px;
+};    
+.container1 {
+    float: right;
+    clear: both;
+};
+
+.submitForm {
+    background-color: white; font-size: 30px; width: 50%; left:auto; right: auto;
+
+};
+
+#contactUs-form {
+background-color: white; font-size: 30px; width: 50%; left:auto; right: auto;
+};
+
+.container2 {
+    float: left;
+};
+
+h1 {
+    font-weight: bold;
+    letter-spacing: 1.5em;
+    text-shadow: 2px 2px black;
+};    
+
+p {
+    color: white;
+}    
+.jumbotron {
+    background-image: url("https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    font-size:24px;
+    line-height: 25px;
+};    
+
+;
+    .eventList {
+        font-weight: bold; 
+        text-shadow: 2px 2px black; 
+        color: white; 
+        text-align: center; 
+        background-color: black;
+    };
+.button {
+    background-color: pink; 
+};    
+
+#weatherCard { width:100%;
+
+}
+;
+
