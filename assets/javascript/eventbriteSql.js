@@ -14,7 +14,7 @@ var createRow = function (data) {
                 var settings = {
                     "async": true,
                     "crossDomain": true,
-                    "url": "https://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search?location.address=charlotte&location.within=10km&expand=venue",
+                    "url":"https://immense-savannah-32940.herokuapp.com///www.eventbriteapi.com/v3/events/search?location.address=charlotte&location.within=10km&expand=venue",
                     "method": "GET",
                     "headers": {
                         "Authorization": "Bearer NU6ISVQ3HWN2QCYFUVXR",
